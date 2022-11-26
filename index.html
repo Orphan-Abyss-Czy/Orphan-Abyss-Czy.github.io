@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+	<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
 	<title>Czy's nest</title>
-  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
-	
 </head>
-<body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-<div class="mdui-appbar">
-  <div class="mdui-toolbar mdui-color-pink">
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-      <i class="mdui-icon material-icons">menu</i>
-    </a>
-    <a href="javascript:;" class="mdui-typo-title">Czy's nest</a>
-    <div class="mdui-toolbar-spacer"></div>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-      <i class="mdui-icon material-icons">search</i>
-    </a>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-      <i class="mdui-icon material-icons">refresh</i>
-    </a>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon">
-      <i class="mdui-icon material-icons">more_vert</i>
-    </a>
-  </div>
-  <div class="mdui-tab mdui-color-pink" mdui-tab>
-    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">luogu</a>
-    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">blog</a>
-    <a href="#example3-tab1" class="mdui-ripple mdui-ripple-white">miku</a>
-  </div>
-</div>
+<body>
+	<!-- 工具栏 -->
+	<div class="mdui-appbar">
+		<div class="mdui-toolbar mdui-color-pink">
+					<button class="mdui-btn mdui-color-theme-accent" mdui-menu="{target: '#example-1'}">
+						<i class="mdui-icon material-icons">menu</i>
+					</button>
+    <ul class="mdui-menu" id="example-1">
+      <li class="mdui-menu-item">
+        <a href="javascript:;" class="mdui-ripple">Refresh</a>
+      </li>
+      <li class="mdui-menu-item" disabled>
+        <a href="javascript:;">Help & feedback</a>
+      </li>
+      <li class="mdui-menu-item">
+        <a href="javascript:;" class="mdui-ripple">Settings</a>
+      </li>
+      <li class="mdui-divider"></li>
+      <li class="mdui-menu-item">
+        <a href="javascript:;" class="mdui-ripple">Sign out</a>
+      </li>
+    </ul>
+			
+			<span class="mdui-typo-title">Czy's nest</span>
+			<div class="mdui-toolbar-spacer"></div>
+			
+			<a href="https://www.baidu.com" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+						<i class="mdui-icon material-icons" style="color: #fff;">search</i>
+					</a>
+			<a href="" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+						<i class="mdui-icon material-icons" style="color: #fff;">refresh</i>
+					</a>
+			<a href="" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+						<i class="mdui-icon material-icons" style="color: #fff;">more_vert</i>
+					</a>
+		</div>
+	</div>
+	
+	<!-- Tab栏 -->
+	<div class="mdui-tab" mdui-tab>
+		<a href="#example1-tab1" class="mdui-ripple">homepage</a>
+		<a href="#example1-tab2" class="mdui-ripple">article</a>
+		<a href="#example1-tab3" class="mdui-ripple">line</a>
+	</div>
+	<div id="example1-tab1" class="mdui-p-a-2">主页</div>
+	<div id="example1-tab2" class="mdui-p-a-2">文章</div>
+	<div id="example1-tab3" class="mdui-p-a-2">
+		<div class="mdui-container">
+			<div class="mdui-row">
+				<div class="mdui-table-fluid">
+					<table class="mdui-table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Stop Name</th>
+								<th>Place</th>
+								<th>transportation</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>1</th>
+								<th>Luogu</th>
+								<th>China</th>
+								<th>
+									<a href="https://www.luogu.com.cn"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</tr>
+							<tr>
+								<th>2</th>
+								<th>Acwing</th>
+								<th>China</th>
+								<th>
+									<a href="https://www.acwing.com"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</tr>
+							<tr>
+								<th>3</th>
+								<th>IAI</th>
+								<th>China</th>
+								<th>
+									<a href="https://www.iai.sh.cn"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</tr>
+							<tr>
+								<th>4</th>
+								<th>Codeforces</th>
+								<th>Russia</th>
+								<th>
+									<a href="https://www.codeforces.com"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</tr>
+							<tr>
+								<th>5</th>
+								<th>Atcoder</th>
+								<th>Japan</th>
+								<th>
+									<a href="https://atcoder.jp"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</th>
+							<tr>
+								<th>6</th>
+								<th>miku</th>
+								<th>Japan</th>
+								<th>
+									<a href="https://piapro.net/intl/zh-cn_character.html"><button class="mdui-btn mdui-ripper mdui-color-pink">go</button></a>
+								</th>
+							</th>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+<div class="mdui-container">
+    <div class="mdui-row">
+      <div class="mdui-col-sm-6 mdui-col-md-4">
+        <div class="mdui-card">
+          <div class="mdui-card-media">
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/kuvzf1uk.png"/>
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/9vojntdy.png"/>
+            <div class="mdui-card-media-covered mdui-card-media-covered-top">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+From
+© Czy
