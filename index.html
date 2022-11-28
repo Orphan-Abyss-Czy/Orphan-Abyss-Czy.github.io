@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+	<link rel="shortcut" href="/mikulty.ico" />
+	<link rel="bookmark" href="/mikulty.ico" type="image/x-icon" />
+	<meta charset="utf-8">
+	<style>
+			body{
+				background-size: 125% ;
+			}
+		</style>
 	<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
 	<title>Czy's nest</title>
 </head>
-<body>
+<body background="https://cdn.luogu.com.cn/upload/image_hosting/kuvzf1uk.png" >
 	<!-- 工具栏 -->
 	<div class="mdui-appbar">
 		<div class="mdui-toolbar mdui-color-pink">
@@ -48,8 +56,13 @@
 		<a href="#example1-tab1" class="mdui-ripple">homepage</a>
 		<a href="#example1-tab2" class="mdui-ripple">article</a>
 		<a href="#example1-tab3" class="mdui-ripple">line</a>
+		<a href="#example1-tab4" class="mdui-ripple">favorite</a>
 	</div>
-	<div id="example1-tab1" class="mdui-p-a-2">主页</div>
+	<div id="example1-tab1" class="mdui-p-a-2">
+		<div class="mdui-text-color-blue">
+			<h1>这里是Czy的家
+		</div>
+	</div>
 	<div id="example1-tab2" class="mdui-p-a-2">文章</div>
 	<div id="example1-tab3" class="mdui-p-a-2">
 		<div class="mdui-container">
@@ -119,9 +132,8 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
-<div class="mdui-container">
+	<div id="example1-tab4" class="mdui-p-a-2">
+		<div class="mdui-container">
     <div class="mdui-row">
       <div class="mdui-col-sm-6 mdui-col-md-4">
         <div class="mdui-card">
@@ -136,5 +148,8 @@
       </div>
     </div>
   </div>
+	</div>
+</body>
+</html>
 From
 © Czy
